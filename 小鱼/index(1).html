@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>css3新特征</title>
+		<style type="text/css">
+			body{
+				font-family: "微软雅黑";
+				font-size: 30px;
+				color: #fff;
+			}
+			.wrap{
+				width: 300px;
+				margin: 0 auto;
+			}
+			div{
+				margin-bottom: 20px;
+				width: 300px;
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+			}
+			.br{
+				border-radius: 20px;
+				background-color:  #3CB371 ;
+			}
+			.bs{
+				background-color:  #FFA500 ;
+				box-shadow: 10px 10px 5px #888888;
+			}
+			.ts{
+				font-size: 30px;
+				color: #000;
+				text-shadow: 5px 5px 5px #FF0000;
+			}
+			.tr{
+				margin-bottom: 50px;
+				background-color: #FFC0CB ;
+				/* Rotate div */
+				transform:rotate(9deg);
+				-ms-transform:rotate(9deg); /* Internet Explorer */
+				-moz-transform:rotate(9deg); /* Firefox */
+				-webkit-transform:rotate(9deg); /* Safari 和 Chrome */
+				-o-transform:rotate(9deg); /* Opera */
+			}
+			.transfrom{
+				padding: 20px;
+				height: 300px;
+				border: 1px solid red;
+			}
+			.div1,.div2{
+				height: 150px;
+				line-height: 150px;
+				background: -webkit-linear-gradient(left,  #DA70D6  ,  #FFC0CB ); /* Safari 5.1 - 6.0 */
+			    background: -o-linear-gradient(right, #DA70D6  ,  #FFC0CB); /* Opera 11.1 - 12.0 */
+			    background: -moz-linear-gradient(right, #DA70D6  ,  #FFC0CB); /* Firefox 3.6 - 15 */
+			    background: linear-gradient(to right, #DA70D6  ,  #FFC0CB); /* 标准的语法（必须放在最后)*/
+				border:1px solid black;
+			}
+			.div2{
+				transform:rotateX(140deg);
+				-webkit-transform:rotateX(140deg); /* Safari and Chrome */
+				-moz-transform:rotateX(140deg); /* Firefox */
+			}
+			.transtion{
+				height:100px;
+				color: #000000;
+				background:yellow;
+				transition:width 2s, height 2s;
+				-moz-transition:width 2s, height 2s, -moz-transform 2s; /* Firefox 4 */
+				-webkit-transition:width 2s, height 2s, -webkit-transform 2s; /* Safari and Chrome */
+				-o-transition:width 2s, height 2s, -o-transform 2s; /* Opera */
+			}
+			.ut{
+				height:100px;
+				color: #000000;
+				background: lightblue;
+			}
+			.ut:hover{
+				width:400px;
+				height:200px;
+				transform:rotate(180deg);
+			}			
+			.transtion:hover{
+				width:400px;
+				height:200px;
+				transform:rotate(180deg);
+				-moz-transform:rotate(180deg); /* Firefox 4 */
+				-webkit-transform:rotate(180deg); /* Safari and Chrome */
+				-o-transform:rotate(180deg); /* Opera */
+			}
+			
+			.animation{
+				width:150px;
+				height:150px;
+				background:red;
+				position:relative;
+				animation:myfirst 5s linear 2s infinite alternate;
+				/* Firefox: */
+				-moz-animation:myfirst 5s linear 2s infinite alternate;
+				/* Safari and Chrome: */
+				-webkit-animation:myfirst 5s linear 2s infinite alternate;
+				/* Opera: */
+				-o-animation:myfirst 5s linear 2s infinite alternate;
+			}
+			@keyframes myfirst{
+				0%   {background:red; left:0px; top:0px;}
+				25%  {background:yellow; left:200px; top:0px;}
+				50%  {background:blue; left:200px; top:200px;}
+				75%  {background:green; left:0px; top:200px;}
+				100% {background:red; left:0px; top:0px;}
+			}
+			@-moz-keyframes myfirst /* Firefox */{
+				0%   {background:red; left:0px; top:0px;}
+				25%  {background:yellow; left:200px; top:0px;}
+				50%  {background:blue; left:200px; top:200px;}
+				75%  {background:green; left:0px; top:200px;}
+				100% {background:red; left:0px; top:0px;}
+			}
+			@-webkit-keyframes myfirst /* Safari and Chrome */{
+				0%   {background:red; left:0px; top:0px;}
+				25%  {background:yellow; left:200px; top:0px;}
+				50%  {background:blue; left:200px; top:200px;}
+				75%  {background:green; left:0px; top:200px;}
+				100% {background:red; left:0px; top:0px;}
+			}	
+			@-o-keyframes myfirst /* Opera */{
+				0%   {background:red; left:0px; top:0px;}
+				25%  {background:yellow; left:200px; top:0px;}
+				50%  {background:blue; left:200px; top:200px;}
+				75%  {background:green; left:0px; top:200px;}
+				100% {background:red; left:0px; top:0px;}
+			}
+
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="br">边框圆角</div>
+			<div class="bs">边框阴影</div>
+			<p class="ts">文本阴影效果</p>
+			<div class="tr">2D旋转</div>
+			
+			<div class="transfrom">
+				<div class="div1">绕x轴旋转</div>
+				<div class="div2">绕x轴旋转</div>
+			</div>
+			
+			<div class="ut">无过渡效果</div>
+			<div class="transtion">过渡效果</div>
+			
+			<div class="animation"></div>
+		</div>
+		
+	</body>
+</html>

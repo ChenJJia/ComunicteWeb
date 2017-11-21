@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<style>
+	*{
+		margin:0px;
+		padding:0px;
+		border:none;
+	}
+	body, html, div, h3{
+		cursor:default;
+	}
+	body {
+		font-size:16px;
+		overflow:hidden;
+	}
+	.body {
+		color:#e9e9e9;
+	}
+	.body textarea {
+		width:100%;
+		height:200px;
+		font-size:1.1em;
+		text-decoration:none;
+		color:#E9E9E9;
+		background-color:#1D1F20;
+		overflow:hidden;
+	}
+	h3 {
+		color:#CBCBCB;
+	}
+	#rightdiv{
+		float:right;
+		width:60%;
+	}
+	.left{
+		float:left;
+		width:40%;
+	}
+	.left , .center, .right {
+		height:250px;
+	}
+	.center, .right {
+		width:100%;
+	}
+	.title {
+		height:40px;
+		line-height:40px;
+		text-align:center;
+		border-right:2px solid #555555;
+		background-color:#1A1C1D;
+	}
+	.right .title {
+		border-right:none;
+	}
+	.center {
+		background-color:#1D1F20;
+	}
+	.right {
+		background-color:#404041;
+	}
+	.clear {
+		clear:both;
+	}
+	.body div {
+		position:relative;
+		margin-left:auto;
+		margin-right:auto;
+		overflow:hidden;
+	}
+	.body p {
+		position:absolute;
+		font-size:2em;
+		color:#404041;
+		top:3px;
+		left:20px;
+	}
+	.ihtml {
+		margin-top:10px!important;
+		padding-top:35px;
+		background-color:#F9CC9D;
+		height:410px;
+		width:90%;
+	}
+	.ibody {
+		padding-top:40px;
+		padding-left:15px;
+		padding-right:15px;
+		background-color:#FDDD9D;
+		height:340px;
+		width:80%;
+	}
+	.ip {
+		background-color:#C2CF8A;
+		height:300px;
+		width:80%;
+	}
+	.show {
+		font-size:2em;
+		color:#e9e9e9;
+	}
+</style>
+</head>
+<body>
+	<div class="left">
+		<div class="title"><h3>结构</h3></div>
+		<div class="body">
+			<div class="ihtml">
+				<p>html</p>
+				<div class="ibody">
+					<p>body</p>
+					<div class="ip">
+						<p>p</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="rightdiv">
+	<div class="center">
+		<div class="title"><h3>代码</h3></div>
+		<div class="body">
+			<textarea>
+<html>
+	<body>
+		<p>欢迎来到计算机技术沙龙</p>
+	</body>
+</html>
+			</textarea>
+		</div>
+	</div>
+	<div class="right">
+		<div class="title"><h3>效果</h3></div>
+		<div>
+			<p class="show">欢迎来到计算机技术沙龙</p>
+		</div>
+	</div>
+	</div>
+	<div class="clear"></div>
+</body>
+</html>

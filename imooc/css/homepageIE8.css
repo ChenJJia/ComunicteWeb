@@ -1,0 +1,13 @@
+/*兼容ie8，ie8下不兼容background-color: rgba(),实现背景透明,文字不透明
+ *filter: alpha()可以在ie8下实现背景透明,文字不透明
+ * */
+
+.menuwrap {
+    background-color: rgb(7, 17, 27)!important;
+    filter: alpha(opacity= 60);
+}
+
+.menuwrap-option:hover {
+    background-color: rgb(0, 0, 0);
+    filter: alpha(opacity = 40);
+}

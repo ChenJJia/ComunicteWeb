@@ -1,0 +1,513 @@
+@charset "utf-8";
+body,
+ul,
+li,
+img,
+div,
+a {
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft Yahei, "宋体", Arial;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    min-height: 850px;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+input,
+button,
+a {
+    border: 0;
+    outline: 0;
+}
+
+body {
+    background-color: #fdfdfd;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.position-re {
+    position: relative;
+}
+
+.position-ab {
+    position: absolute;
+}
+
+.text-c {
+    text-align: center;
+}
+
+.left-10 {
+    left: 10px;
+}
+
+.left-50 {
+    left: 50px;
+}
+
+.left-70 {
+    left: 70px;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.top-30 {
+    top: 30px;
+}
+
+.margin-l60 {
+    margin-left: 60px;
+}
+
+.margin-r60 {
+    margin-right: 60px;
+}
+/*页面第一张背景图片*/
+
+#first-bk {
+    z-index: -1;
+    width: 100%;
+    height: 490px;
+    background-image: url(../img/bk.jpg);
+    background-size: 100%;
+}
+/*页面顶部内容*/
+
+#header {
+    height: 80px;
+    line-height: 80px;
+}
+
+#header a {
+    color: #07111b;
+}
+
+#header a:hover {
+    color: #FF0000;
+}
+
+
+/*页面导航部分*/
+
+.header-left li {
+    float: left;
+}
+
+.header-left a {
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+
+/*顶部输入框的样式*/
+
+.search-bar {
+    width: 240px;
+    height: 60px;
+}
+
+
+/*输入框*/
+
+.search-bar input {
+    width: 240px;
+    height: 40px;
+    border: 0px;
+    border-bottom: 1px solid #ccc;
+    line-height: 40px;
+    font-size: 14px;
+    padding-left: 10px;
+    background: transparent;
+}
+
+.search-prompt {
+    font-size: 14px;
+    z-index: 3;
+}
+
+
+/*注册，登录样式*/
+
+.login-register li {
+    float: left;
+}
+
+.login-register a {
+    padding-right: 30px;
+}
+
+
+/*页面的主要部分*/
+
+
+/*页面菜单所需的图片，鼠标滑过显示的图片*/
+
+.img-backg15 {
+    background-image: url(../img/be.png);
+}
+
+.img-backg16 {
+    background-image: url(../img/data.png);
+}
+
+.img-backg17 {
+    background-image: url(../img/fe.png);
+}
+
+.img-backg18 {
+    background-image: url(../img/mobileBg.png);
+}
+
+.img-backg19 {
+    background-image: url(../img/bigdataBg.png);
+}
+
+.img-backg20 {
+    background-image: url(../img/textBg.png);
+}
+
+.img-backg21 {
+    background-image: url(../img/photo.png);
+}
+
+
+/*内容部分*/
+
+.main {
+    margin: 30px auto 0 auto;
+    width: 1200px;
+    height: 460px;
+}
+
+
+/*底部的轮播图*/
+
+.bg-carousel {
+    z-index: -1;
+    width: 1200px;
+    overflow: hidden;
+}
+
+
+/*存放轮播图所要用的图片*/
+
+.pic {
+    height: 460px;
+    width: 6000px;
+}
+
+.pic img {
+    float: left;
+}
+
+
+/*轮播图左右切换按钮*/
+
+.prev,
+.next {
+    position: absolute;
+    top: 175px;
+    z-index: 100;
+    display: inline-block;
+    width: 50px;
+    height: 80px;
+    font-size: 70px;
+    line-height: 75px;
+    text-align: center;
+}
+
+
+/*轮播图切换按钮鼠标滑过效果*/
+
+.pic-module a {
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+    color: #fff;
+}
+
+.pic-module a:hover {
+    background-color: #000;
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+
+/*菜单栏选项样式*/
+
+.menuwrap {
+    width: 225px;
+    height: 460px;
+    background-color: rgba(7, 17, 27, .5);
+}
+
+
+/*菜单栏选项样式*/
+
+.menuwrap-option {
+    width: 225px;
+    font-size: 16px;
+}
+
+.menuwrap-option>a {
+    display: block;
+    position: relative;
+    margin: auto;
+    height: 65px;
+    width: 170px;
+    line-height: 65px;
+    color: #fff;
+}
+
+
+/*鼠标滑过菜单选项背景颜色改变，和隐藏div显示*/
+
+.menuwrap-option:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.menuwrap-option:hover div {
+    display: block;
+}
+
+
+/*隐藏div里内容的样式*/
+
+
+/*隐藏div标题（分类目录和课程推荐）*/
+
+.title {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+
+
+/*隐藏div分类目录和课程推荐内容的样式*/
+
+.sort-list,
+.course-recommend {
+    font-size: 14px;
+    margin: 30px 0 0 40px;
+}
+
+.sort-list a,
+.course-recommend a {
+    color: #07111b;
+}
+
+.sort-list li,
+p {
+    margin-top: 15px;
+}
+
+.sort-list a {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.tag-box {
+    margin-left: 40px;
+    width: 600px;
+}
+
+.sort-list span {
+    font-weight: bold;
+    color: #4d555d;
+}
+
+.course-recommend span {
+    margin-right: 10px;
+    background: #f3f5f7;
+}
+
+.cate-tag {
+    padding: 3px 5px;
+}
+
+.path-recom a {
+    color: #f01414;
+}
+
+.path-recom span {
+    background: #fde6e5;
+}
+
+
+/*
+*菜单选项的右侧小箭头
+*例如： 前端开发>
+*/
+
+.menu-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 10px;
+}
+
+
+/*页面菜单，鼠标滑过显示div的样式*/
+
+.inner-box {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    left: 224px;
+    top: 0px;
+    float: left;
+    width: 700px;
+    height: 460px;
+}
+
+
+/*轮播图下方的图片*/
+
+.path-banner {
+    margin: auto;
+    width: 1200px;
+}
+
+.path-banner>a {
+    display: block;
+    float: left;
+    width: 240px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.path-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*页面底部，版权声明*/
+
+
+/*图片*/
+
+
+/*实现鼠标移至图片，更换图片，背景颜色加*/
+
+.weibo-img {
+    background-image: url(../img/uiz11.png);
+}
+
+.weibo-img:hover {
+    background-image: url(../img/uiz15.png);
+}
+
+.wechat-img {
+    background-image: url(../img/uiz12.png);
+}
+
+.wechat-img:hover {
+    background-image: url(../img/uiz16.png);
+}
+
+.tengxun-img {
+    background-image: url(../img/uiz13.png);
+}
+
+.tengxun-img:hover {
+    background-image: url(../img/uiz17.png);
+}
+
+.qq-space-img {
+    background-image: url(../img/uiz14.png);
+}
+
+.qq-space-img:hover {
+    background-image: url(../img/uiz18.png);
+}
+
+
+/*内容*/
+
+
+/*
+*   1.position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    width: 1200px;
+    实现div居中
+    2.  bottom: 0;
+    div一直在页面的底部
+*/
+
+#footer {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -600px;
+    width: 1200px;
+    font-size: 14px;
+}
+
+.footer-sns a {
+    display: inline-block;
+    margin: 0 9px;
+    height: 32px;
+    width: 32px;
+}
+
+.footer-sns-weixin-expand {
+    display: none;
+    left: -65px;
+    top: -210px;
+}
+
+
+/*鼠标移至，显示微信的二维码*/
+
+.wechat-img:hover .footer-sns-weixin-expand {
+    display: block;
+}
+
+.footer-link {
+    width: 1200px;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid #d0d6d9;
+}
+
+.footer-link a {
+    padding: 0 20px;
+    color: #99a1a6;
+}
+
+.footer-link a:hover {
+    color: #FF0000;
+}
+
+.footer-copyright {
+    padding: 20px 0 25px 0;
+    color: #b4bbbf;
+}
